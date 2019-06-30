@@ -1,6 +1,6 @@
 {
-	"name": "saviour",
-	"displayName": "saviour",
+	"name": "vssave",
+	"displayName": "vssave",
 	"description": "save the settings of the vscode",
 	"version": "0.0.1",
 	"engines": {

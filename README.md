@@ -1,6 +1,6 @@
-# saviour README
+# vssave README
 
-This is the README for your extension "saviour". After writing up a brief description, we recommend including the following sections.
+This is the README for your extension "vssave". After writing up a brief description, we recommend including the following sections.
 
 ## Features
 
