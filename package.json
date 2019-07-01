@@ -10,16 +10,45 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.helloWorld"
+		"onCommand:extension.vssave"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
+		"configuration": {
+			"type": "object",
+			"title": "VS-save",
+			"properties": {
+				"vssave.google.email": {
+					"type": "string",
+					"default": "",
+					"description": "",
+					"scope": "window"
+				}
+			}
+		},
 		"commands": [
 			{
-				"command": "extension.helloWorld",
-				"title": "Hello World"
+				"command": "extension.vssave",
+				"title": "VS save ready"
 			}
-		]
+		],
+		"viewsContainers": {
+            "activitybar": [
+                {
+                    "id": "vssave-account",
+                    "title": "vssave account",
+                    "icon": "assets/saviour-account.svg"
+                }
+            ]
+		},
+		"views": {
+			"vssave-account": [
+				{
+					"id": "account-info",
+					"name": "Info"
+				}
+			]
+		}
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
